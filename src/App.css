@@ -1,0 +1,87 @@
+/* Styles for the overall page layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Use a clean, readable font */
+  background-color: #f0f0f0; /* Light background color for the page */
+}
+
+/* Style for the form container to center it and add spacing */
+.form-container {
+  max-width: 800px; /* Maximum width of the form */
+  margin: 40px auto; /* Center horizontally and add vertical margin */
+  padding: 20px; /* Add padding around the form */
+  background-color: #ffffff; /* White background for the form */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 10px; /* Rounded corners for the form container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: relative; /* Position relative for potential absolute children */
+  display: flex;
+  flex-direction: column; /* Column layout for form elements */
+}
+
+/* Style for headings inside the form container */
+.form-container h2 {
+  margin-bottom: 20px; /* Space between heading and form */
+  text-align: left; /* Left-align the heading */
+  color: #333; /* Dark text color for the heading */
+}
+
+/* General form styles */
+form {
+  display: flex;
+  flex-direction: column; /* Column layout for form elements */
+}
+
+/* Add pastel colors to input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  background-color: #faf9f9; /* Light pastel color for input fields */
+  border: 1px solid #c6c6c6; /* Slightly darker border */
+  padding: 10px; /* Padding inside the input fields */
+  border-radius: 5px; /* Rounded corners for input fields */
+  width: 100%; /* Full width for input fields */
+  margin-bottom: 15px; /* Space below each input field */
+}
+
+/* Add space between sections */
+h3 {
+  margin-top: 30px; /* Space above each section title */
+}
+
+/* Style for buttons */
+button {
+  background-color: #add8e6; /* Pastel blue for buttons */
+  border: none; /* No border for buttons */
+  padding: 10px 20px; /* Padding inside buttons */
+  margin-right: 10px; /* Space between buttons */
+  border-radius: 5px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-weight: bold; /* Bold text for buttons */
+}
+
+/* Specific style for the submit button */
+button[type="submit"] {
+  background-color: #90ee90; /* Pastel green for submit button */
+}
+
+/* Space between address information and buttons */
+.form-actions {
+  display: flex; /* Flexbox for button layout */
+  justify-content: space-between; /* Space between buttons */
+  margin-top: 20px; /* Space above the button section */
+}
+
+/* CSS rule for submitted text */
+.submitted-text {
+  color: blue; /* Change to your desired color */
+}
+
+/* Ensure form fields have a pastel border on focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  border-color: #add8e6; /* Pastel blue border on focus */
+  outline: none; /* Remove default outline */
+}
